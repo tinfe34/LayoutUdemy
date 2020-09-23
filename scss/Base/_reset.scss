@@ -1,0 +1,16 @@
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    header, section, footer, aside, nav, main, article, figure {
+        display: block;
+    }
+
+    body,html{
+        font-family: Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+        font-weight: $fw-bold-0;
+        line-height: $line-height-0;
+        font-size: $fs-0;
+    }

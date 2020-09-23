@@ -1,0 +1,38 @@
+.couser {
+    .mytab {
+        .title {
+            @include text($fw-bold-2, $fs-2, $line-height-1, none);
+            height: 50px;
+            overflow: hidden;
+        }
+        .price {
+            @include text($fw-bold-2, $fs-2, $line-height-1, none);
+        }
+    }
+    .nav {
+        .nav-item {
+            a {
+                @include text($fw-bold-2, $fs-2, $line-height-1, none);
+            }
+        }
+    }
+    .banner {
+        background: url(https://udemy-images.udemy.com/browse_components/shared-assets/purple-intersect.svg) repeat-x #6e1a52;
+        background-size: auto 120%;
+        background-position: 0 -2.4rem;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+        .content {
+            width: 500px;
+            margin: 30px 0;
+            text-align: center;
+            .btn {
+                color: white;
+                border: 1px solid;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+    .student {
+        background-color: #003640;
+        margin-bottom: 30px;
+        .wrapper {
+            width: 80%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            height: 360px;
+            .left {
+                margin: 0 20px;
+                .content {
+                    text-align: center;
+                    color: white;
+                    .btn {
+                        background-color: #0f7c90;
+                        color: white;
+                    }
+                }
+            }
+            .right {
+                img {
+                    max-width: 100%;
+                    min-height: 400px;
+                }
+            }
+        }
+        @include mediaQuery('medium') {
+            .wrapper {
+                .right {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }

@@ -1,0 +1,102 @@
+header {
+    .myNavbar {
+        .navbar-brand {
+            flex-grow: 1;
+            img {
+                width: 110px;
+            }
+        }
+        .categorie {
+            align-self: center;
+            flex-grow: 1;
+            span {
+                @include text ($fw-bold-0, $fs-0, $line-height-0, #0f7c90);
+            }
+        }
+        .search {
+            flex-grow: 6;
+            @include btnsearch($color-white-1, $color-white-0, 9999px, auto);
+        }
+        .navbar-nav {
+            .nav-item {
+                flex-grow: 4;
+                a {
+                    color: black;
+                    @include text ($fw-bold-0, $fs-0, $line-height-0, $color-blue);
+                }
+            }
+        }
+        .icon {
+            flex-grow: 1;
+            text-align: center;
+            align-self: center;
+            i {
+                font-size: 20px;
+            }
+        }
+        .button {
+            flex-grow: 2;
+            justify-content: space-around;
+        }
+    }
+    @include mediaQuery('extra-large') {
+        .myNavbar {
+            .navbar-nav {
+                .Business {
+                    display: none;
+                }
+            }
+        }
+    }
+    @include mediaQuery('large') {
+        .myNavbar {
+            .navbar-nav {
+                display: none;
+            }
+        }
+    }
+    @include mediaQuery('medium') {
+        .myNavbar {
+            .categorie,
+            .search {
+                display: none;
+            }
+            .navbar-brand {
+                text-align: center;
+            }
+            .respon-sm {
+                .icon {
+                    i {
+                        display: none;
+                    }
+                }
+                .button {
+                    .btn--white,
+                    .btn--red {
+                        display: none;
+                    }
+                }
+            }
+            .navbar-nav {
+                display: block;
+                .Business {
+                    display: block;
+                }
+                background-color: black;
+                .nav-item {
+                    a {
+                        color: $color-white-cream;
+                        text-align: center;
+                        border-bottom: 1px solid $color-green;
+                        &:hover {
+                            color: $color-white-0;
+                        }
+                    }
+                    &:hover {
+                        background-color: $color-green;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.categories {
+    margin-bottom: 50px;
+    .card {
+        margin: 20px 0;
+        .card-title {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

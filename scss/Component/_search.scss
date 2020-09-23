@@ -1,0 +1,14 @@
+@mixin btnsearch($bg-color, $boder, $border-radius, $overflow) {
+    border: 1px solid $boder;
+    border-radius: $border-radius;
+    background-color: #fff;
+    overflow: $overflow;
+    .form-control,
+    .input-group-text {
+        border: none;
+        background-color: $color-white-0;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}

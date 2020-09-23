@@ -1,0 +1,238 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+header, section, footer, aside, nav, main, article, figure {
+  display: block; }
+
+body, html {
+  font-family: Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 14px; }
+
+.btn--white {
+  color: #0f7c90;
+  background-color: #fff;
+  border: 1px solid #dcdacb;
+  cursor: pointer; }
+  .btn--white:hover {
+    background-color: #4CAF50;
+    color: #fff; }
+
+.btn--red {
+  color: #fff;
+  background-color: #0f7c90;
+  border: none;
+  cursor: pointer; }
+  .btn--red:hover {
+    background-color: #ec5252;
+    color: #fff; }
+
+header .myNavbar .navbar-brand {
+  flex-grow: 1; }
+  header .myNavbar .navbar-brand img {
+    width: 110px; }
+header .myNavbar .categorie {
+  align-self: center;
+  flex-grow: 1; }
+  header .myNavbar .categorie span {
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 14px; }
+    header .myNavbar .categorie span:hover {
+      color: #0f7c90; }
+header .myNavbar .search {
+  flex-grow: 6;
+  border: 1px solid #fff;
+  border-radius: 9999px;
+  background-color: #fff;
+  overflow: auto; }
+  header .myNavbar .search .form-control,
+  header .myNavbar .search .input-group-text {
+    border: none;
+    background-color: #fff; }
+    header .myNavbar .search .form-control:focus,
+    header .myNavbar .search .input-group-text:focus {
+      box-shadow: none; }
+header .myNavbar .navbar-nav .nav-item {
+  flex-grow: 4; }
+  header .myNavbar .navbar-nav .nav-item a {
+    color: black;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 14px; }
+    header .myNavbar .navbar-nav .nav-item a:hover {
+      color: #0f7c90; }
+header .myNavbar .icon {
+  flex-grow: 1;
+  text-align: center;
+  align-self: center; }
+  header .myNavbar .icon i {
+    font-size: 20px; }
+header .myNavbar .button {
+  flex-grow: 2;
+  justify-content: space-around; }
+@media screen and (max-width: 1200px) {
+  header .myNavbar .navbar-nav .Business {
+    display: none; } }
+@media screen and (max-width: 992px) {
+  header .myNavbar .navbar-nav {
+    display: none; } }
+@media screen and (max-width: 768px) {
+  header .myNavbar .categorie,
+  header .myNavbar .search {
+    display: none; }
+  header .myNavbar .navbar-brand {
+    text-align: center; }
+  header .myNavbar .respon-sm .icon i {
+    display: none; }
+  header .myNavbar .respon-sm .button .btn--white,
+  header .myNavbar .respon-sm .button .btn--red {
+    display: none; }
+  header .myNavbar .navbar-nav {
+    display: block;
+    background-color: black; }
+    header .myNavbar .navbar-nav .Business {
+      display: block; }
+    header .myNavbar .navbar-nav .nav-item a {
+      color: #dcdacb;
+      text-align: center;
+      border-bottom: 1px solid #4CAF50; }
+      header .myNavbar .navbar-nav .nav-item a:hover {
+        color: #fff; }
+    header .myNavbar .navbar-nav .nav-item:hover {
+      background-color: #4CAF50; } }
+
+.cover {
+  background-image: url(../img/7cf844b2-4371-45ea-9ef5-e10ea212eac2.jpg);
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+  .cover .cover__content {
+    width: 440px;
+    background-color: white;
+    position: absolute;
+    left: 3rem;
+    top: 4rem;
+    padding: 2.4rem; }
+    .cover .cover__content h1 {
+      font-weight: 700;
+      line-height: 1.2;
+      font-size: 40px; }
+      .cover .cover__content h1:hover {
+        color: none; }
+    .cover .cover__content p {
+      font-weight: 400;
+      line-height: 1.4;
+      font-size: 20px; }
+      .cover .cover__content p:hover {
+        color: none; }
+  .cover .search {
+    border: 1px solid #dcdacb;
+    border-radius: none;
+    background-color: #fff;
+    overflow: hidden; }
+    .cover .search .form-control,
+    .cover .search .input-group-text {
+      border: none;
+      background-color: #fff; }
+      .cover .search .form-control:focus,
+      .cover .search .input-group-text:focus {
+        box-shadow: none; }
+    .cover .search .form-control,
+    .cover .search .input-group-text {
+      border: none;
+      background-color: #fff; }
+      .cover .search .form-control:focus,
+      .cover .search .input-group-text:focus {
+        box-shadow: none; }
+  @media screen and (max-width: 576px) {
+    .cover {
+      background-size: cover;
+      height: 250px;
+      background-position: right; }
+      .cover .cover__content {
+        display: none; } }
+
+.couser .mytab .title {
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 20px;
+  height: 50px;
+  overflow: hidden; }
+  .couser .mytab .title:hover {
+    color: none; }
+.couser .mytab .price {
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 20px; }
+  .couser .mytab .price:hover {
+    color: none; }
+.couser .nav .nav-item a {
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 20px; }
+  .couser .nav .nav-item a:hover {
+    color: none; }
+.couser .banner {
+  background: url(https://udemy-images.udemy.com/browse_components/shared-assets/purple-intersect.svg) repeat-x #6e1a52;
+  background-size: auto 120%;
+  background-position: 0 -2.4rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; }
+  .couser .banner .content {
+    width: 500px;
+    margin: 30px 0;
+    text-align: center; }
+    .couser .banner .content .btn {
+      color: white;
+      border: 1px solid; }
+
+.categories {
+  margin-bottom: 50px; }
+  .categories .card {
+    margin: 20px 0; }
+    .categories .card .card-title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+
+.student {
+  background-color: #003640;
+  margin-bottom: 30px; }
+  .student .wrapper {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 360px; }
+    .student .wrapper .left {
+      margin: 0 20px; }
+      .student .wrapper .left .content {
+        text-align: center;
+        color: white; }
+        .student .wrapper .left .content .btn {
+          background-color: #0f7c90;
+          color: white; }
+    .student .wrapper .right img {
+      max-width: 100%;
+      min-height: 400px; }
+  @media screen and (max-width: 768px) {
+    .student .wrapper .right img {
+      display: none; } }
+
+footer {
+  border-top: 1px solid #dcdacb;
+  padding: 20px; }
+  footer p {
+    float: right; }
+
+/*# sourceMappingURL=index.css.map */
